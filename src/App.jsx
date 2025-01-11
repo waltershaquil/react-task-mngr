@@ -35,13 +35,14 @@ function App() {
   }
 
   function onTaskClick(taskId) {
-    const newTasks = task.map((task) => {
-      if (task.id == taskId) {
+    const newTasks = tasks.map((task) => {
+      if (task.id === taskId) {
         return { ...task, isCompleted: !task.isCompleted };
       }
-
       return task;
     });
+
+    setTasks(newTasks); // Use setState to update the tasks state
   }
 
   function onDeleteTaskClick(taskId) {
