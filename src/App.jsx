@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import AddTask from "./components/AddTask";
-import Task from "./components/task";
+import Task from "./components/Task";
 import { v4 } from "uuid";
 import { data, Navigate } from "react-router-dom";
 
